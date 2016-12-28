@@ -1,0 +1,34 @@
+object Frm_Main: TFrm_Main
+  Left = 0
+  Height = 442
+  Top = 0
+  Width = 726
+  ActiveControl = ListBox1
+  AutoSize = True
+  BorderIcons = [biSystemMenu]
+  Caption = 'QuranKu v.0.0.1'
+  ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+  ChildSizing.EnlargeVertical = crsHomogenousChildResize
+  ClientHeight = 442
+  ClientWidth = 726
+  OnCreate = FormCreate
+  Visible = False
+  object ListBox1: TListBox
+    Left = 0
+    Height = 427
+    Top = 1
+    Width = 260
+    ItemHeight = 0
+    OnClick = ListBox1Click
+    TabOrder = 0
+  end
+  object Memo1: TMemo
+    Left = 273
+    Height = 430
+    Top = 0
+    Width = 433
+    OnChange = Memo1Change
+    ScrollBars = ssAutoBoth
+    TabOrder = 1
+  end
+end
